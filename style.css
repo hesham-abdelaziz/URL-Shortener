@@ -24,7 +24,11 @@ li {
 /* Global styles */
 
 /* Nav bar */
-
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -77,6 +81,23 @@ li {
 }
 .header .login-sign-actions .signUpBtn:hover {
   background-color: hsl(180, 66%, 49%, 0.7);
+}
+
+
+.menu-icon  {
+  width: 100%;
+ display:none;
+ justify-content: flex-end;
+ flex-direction: column;
+ align-items: flex-end;
+ cursor: pointer;
+}
+.menu-icon span {
+  display: inline-block;
+  width: 6%;
+  height: 2px;
+  background-color: #222;
+  margin-bottom: 5px;
 }
 
 /* Nav bar */
@@ -392,7 +413,9 @@ li {
     
 }
 @media screen and (max-width : 992px) {
-
+  .menu-icon {
+    display: inline-flex;
+  }
     .header .logo .navigation-links {
         display: none;
     }
